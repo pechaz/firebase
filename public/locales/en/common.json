@@ -1,0 +1,36 @@
+{
+  "labels": {
+    "email": "Email",
+    "password": "Password",
+    "forgot password": "forgot password",
+    "accept terms": "I accept the Terms and Conditions",
+    "login": "login",
+    "hi n": "Hi, {{n}}",
+    "Driver": "Driver",
+    "Vehicle": "Vehicle",
+    "total n of driver": "Total no. of drivers",
+    "on duty": "On Duty",
+    "off duty": "Off Duty",
+    "total n of vehicle": "Total no. of vehicle",
+    "in use": "In Use",
+    "unused": "Unused",
+    "reminder": "Reminder",
+    "renewed": "Renewed",
+    "insurance": "Insurance",
+    "puspakom service": "Puspakom Service",
+    "road tax": "Road Tax",
+    "tuck permit": "Truck Permit",
+    "general": "General",
+    "recent submissions": "Recent Submissions",
+    "no": "No.",
+    "driver": "Driver",
+    "vehicle": "Vehicle",
+    "mile age": "Mileage",
+    "date": "Date",
+    "endorse": "Endorse"
+  },
+  "errors": {
+    "Required!": "Required!",
+    "Field must be valid email address": "Field must be valid email address"
+  }
+}
