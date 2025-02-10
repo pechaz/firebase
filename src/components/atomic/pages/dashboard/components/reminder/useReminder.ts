@@ -20,27 +20,27 @@ const useReminder = () => {
   const sumCalculation = (data: IVehicleDueDate[]) => {
     const sumRenewed = data
       .filter((item) => item.type === "renewed")
-      .map((item) => item.count)
+      .map((item) => Number(item.count))
       .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     const sumInsurance = data
       .filter((item) => item.type === "insurance")
-      .map((item) => item.count)
+      .map((item) => Number(item.count))
       .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     const sumPuspakom = data
       .filter((item) => item.type === "puspakom-service")
-      .map((item) => item.count)
+      .map((item) => Number(item.count))
       .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     const sumRoadTax = data
       .filter((item) => item.type === "road-tax")
-      .map((item) => item.count)
+      .map((item) => Number(item.count))
       .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     const sumTruckPermit = data
       .filter((item) => item.type === "truck-permit")
-      .map((item) => item.count)
+      .map((item) => Number(item.count))
       .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     const sumGeneral = data
       .filter((item) => item.type === "general")
-      .map((item) => item.count)
+      .map((item) => Number(item.count))
       .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     setRenewedCount(sumRenewed);
     setInsuranceCount(sumInsurance);
@@ -52,7 +52,7 @@ const useReminder = () => {
 
   useEffect(() => {
     if (data && data.data) {
-      sumCalculation(data.data);
+      sumCalculation(data.data.data);
     }
   }, [data]);
 

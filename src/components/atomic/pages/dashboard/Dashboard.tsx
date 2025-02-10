@@ -18,8 +18,8 @@ const Dashboard = () => {
         })}
       </Typography>
       <Statistic
-        driver={driverStatisticData?.data}
-        vehicle={vehicleStatisticData?.data}
+        driver={driverStatisticData?.data?.data}
+        vehicle={vehicleStatisticData?.data?.data}
       />
       <Reminder />
       <Grid />

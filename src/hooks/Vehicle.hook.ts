@@ -26,7 +26,7 @@ export const useGetStatistics = (orgId: number) => {
 export const useGetDueDates = (orgId: number) => {
   const { data, error, isFetching, isLoading, isError, isSuccess, refetch } =
     useQuery({
-      queryKey: [Queries.VEHICLE_STATISTICS, orgId],
+      queryKey: [Queries.VEHICLE_DUE_dATES, orgId],
       queryFn: () => VehicleNetwork.getDueDates(orgId),
       retry: false,
       refetchOnWindowFocus: false,
