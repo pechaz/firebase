@@ -6,3 +6,6 @@ export type {
   VEHICLE_DUE_DATE_TYPE,
 } from "./IVehicle";
 export type { IGrid } from "./IGrid";
+export type { IMessage } from "./IMessage";
+export type { IConversation } from "./IConversation";
+export type { IClient } from "./IClient";
